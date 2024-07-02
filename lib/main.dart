@@ -16,7 +16,15 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Text("hello"),
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.red,
+          title: const Center(child: Text("App Bar Title")),
+        ),
+        body: const Center(
+          child: Text("hello"),
+        ),
+      ),
     );
   }
 }
