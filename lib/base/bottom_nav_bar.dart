@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 
-class BottomNavBar extends StatefulWidget {
-  const BottomNavBar({super.key});
+class MyBar extends StatefulWidget {
+  const MyBar({super.key});
 
   @override
-  State<BottomNavBar> createState() => _BottomNavBarState();
+  State<MyBar> createState() => _MyBarState();
 }
 
-class _BottomNavBarState extends State<BottomNavBar> {
+class _MyBarState extends State<MyBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.red,
-        title: const Text("App Bar"),
+        title: const Center(
+          child: Text("App BAr"),
+        ),
       ),
     );
   }
